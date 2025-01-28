@@ -9,23 +9,31 @@ header {
 
 .header__links-list {
   display: flex;
-  gap: 30px;
+  gap: 28px;
   list-style: circle;
 }
 
-.header__link_active {
-  text-decoration: none;
+.header__links-list-item {
+  padding: 0 0 0 5px;
 }
 
 .header__links-list-item_no-bullit {
   list-style-type: none;
+  padding: 0;
 }
 
-.header__logo {
-  display: block;
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header__link_active {
+  text-decoration: none;
+  border: 0;
 }
 
 .header__logo-image {
+  display: block;
   width: 148px;
   height: 105px;
 }
@@ -36,9 +44,11 @@ header {
 }
 
 .header__address {
-  display: flex;
-  flex-direction: column;
   justify-self: end;
+}
+
+.address-line {
+  line-height: 24px;
 }
 
 main {
