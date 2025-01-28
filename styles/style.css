@@ -42,16 +42,74 @@ header {
 }
 
 main {
-  padding: 165px 50px 50px;
   margin-bottom: 180px;
 }
 
 .cover {
+  padding: 165px 50px 50px;
   background: url(../images/cover.jpg);
+  background-position: center;
+  background-size: 125% 100%;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .overlay {
+  position: absolute;
+  inset: 0;
   background: rgb(0 0 0 / 0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 115%;
+  margin-bottom: 106px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.no-letter-spacing {
+  margin-right: -30px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.cover__description-text {
+  line-height: 127.27%;
+  word-spacing: 20px;
+}
+
+.bet-button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: inherit;
+  text-transform: inherit;
+  padding: 12px 32px 11px 31px;
 }
 
 .lots {
