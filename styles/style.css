@@ -88,6 +88,10 @@ main {
   display: block;
 }
 
+.aligned-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .aligned-text_center {
   text-align: center;
 }
@@ -111,7 +115,7 @@ main {
 
 .cover__description-text {
   line-height: 127.27%;
-  word-spacing: 20px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
