@@ -244,6 +244,37 @@ main {
   margin-bottom: 24px;
 }
 
-footer {
-  padding: 0 50px;
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 50px 82px;
+}
+
+.footer__address {
+  justify-self: start;
+  font-size: 18px;
+}
+
+.footer__menu {
+  justify-self: center;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-list-item {
+  text-align: center;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-self: end;
+  list-style: none;
+}
+
+.footer__social-list-item {
+  width: 48px;
 }
