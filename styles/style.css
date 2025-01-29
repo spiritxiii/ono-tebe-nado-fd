@@ -143,8 +143,8 @@ main {
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
   padding: 0;
@@ -152,15 +152,21 @@ main {
 }
 
 .card-link {
+  height: 100%;
   position: relative;
   text-decoration: none;
 }
 
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
 .card {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 596px;
   padding: 48px 40px;
 }
 
